@@ -1,0 +1,100 @@
+.icons {
+  @apply bg-no-repeat bg-left bg-contain;
+}
+
+:root {
+  --menuIcon: url(../assets/icons/menu.icon.svg);
+  --menuClose: url(../assets/icons/menuClose.icon.svg);
+}
+
+// .theme_dark {
+//   --accStatementIcon: url(../assets/icons/acc.statement.icon.svg);
+//   --calenderIcon: url(../assets/icons/calender.icon.svg);
+//   --contactNote: url(../assets/icons/contractNote.icon.svg);
+//   --dashboardIcon: url(../assets/icons/dashboard.icon.svg);
+//   --downloadDisabledIcon: url(../assets/icons/downloadDisabled.icon.svg);
+//   --downloadIcon: url(../assets/icons/download.icon.svg);
+//   --downloadIconBlack: url(../assets/icons/downloadIcon.black.icon.svg);
+//   --downloadIconWhite: url(../assets/icons/downloadIcon.white.icon.svg);
+//   --expandArrowLeftIcon: url(../assets/icons/expandArrowLeft.icon.svg);
+//   --expandArrowRightIcon: url(../assets/icons/expandArrowRight.icon.svg);
+//   --filterBlackIcon: url(../assets/icons/filter.black.icon.svg);
+//   --filterPrimaryIcon: url(../assets/icons/filter.primary.icon.svg);
+//   --ideasIcon: url(../assets/icons/ideas.icon.svg);
+//   --infoIcon: url(../assets/icons/info.icon.svg);
+//   --infoIconWarning: url(../assets/icons/infoIconWarning.icon.svg);
+//   --infoStrokedIconBlue: url(../assets/icons/infoStroked.icon.svg);
+//   --primaryInfoIcon: url(../assets/icons/primary.info.icon.svg);
+//   --leftArrowIcon: url(../assets/icons/leftArrow.icon.svg);
+//   --logOutIcon: url(../assets/icons/logout.icon.svg);
+//   --notificationIcon: url(../assets/icons/notification.icon.svg);
+//   --percentageIcon: url(../assets/icons/percentage.icon.svg);
+//   --productIcon: url(../assets/icons/product.Icon.svg);
+//   --profileIcon: url(../assets/icons/profile.icon.svg);
+//   --reportsIcon: url(../assets/icons/reports.icon.svg);
+//   --rightArrowIcon: url(../assets/icons/rightArrow.icon.svg);
+//   --shareIcon: url(../assets/icons/share.icon.svg);
+//   --sttIcon: url(../assets/icons/stt.icon.svg);
+//   --tradeBookIcon: url(../assets/icons/tradeBook.icon.svg);
+//   --viewLessIcon: url(../assets/icons/viewLess.icon.svg);
+//   --viewMoreIcon: url(../assets/icons/viewMore.icon.svg);
+//   --searchIcon: url(../assets/icons/search.icon.svg);
+//   --dashboardFilledIcon: url(../assets/icons/dashboardFilled.icon.svg);
+//   --productFilledIcon: url(../assets/icons/productFilled.icon.svg);
+//   --ideasFilledIcon: url(../assets/icons/ideasFilled.icon.svg);
+//   --reportFilledIcon: url(../assets/icons/reportFilled.icon.svg);
+//   --profileFilledIcon: url(../assets/icons/profileFilled.icon.svg);
+//   --moreIcon: url(../assets/icons/more.icon.svg);
+//   --seeMoreIcon: url(../assets/icons/seeMore.icon.svg);
+//   --seeLessIcon: url(../assets/icons/seeLess.icon.svg);
+//   --addIcon: url(../assets/icons/addIcon.icon.svg);
+//   --addIconButtonIcon: url(../assets/icons/addIconButton.icon.svg);
+//   --primaryGhostAddButtonIcon: url(../assets/icons/primaryGhostAddButton.icon.svg);
+//   --closeIcon: url(../assets/icons/close.icon.svg);
+//   --uploadIcon: url(../assets/icons/upload.icon.svg);
+//   --cloudUpArrowIcon: url(../assets/icons/cloudUparrow.icon.svg);
+//   --downloadArrowDownIcon: url(../assets/icons/downloadArrowDown.icon.svg);
+//   --successTickIcon: url(../assets/icons/successTick.icon.svg);
+//   --primarySuccessTickIcon: url(../assets/icons/primarySuccessTick.icon.svg);
+//   --eyeViewIcon: url(../assets/icons/eyeView.icon.svg);
+//   --passwordEyeViewIcon: url(../assets/icons/passwordEyeView.icon.svg);
+//   --deleteIcon: url(../assets/icons/delete.icon.svg);
+//   --warningIcon: url(../assets/icons/warning.icon.svg);
+//   --editPenIcon: url(../assets/icons/editPen.icon.svg);
+//   --redCloseIcon: url(../assets/icons/redClose.icon.svg);
+//   --greenRoundTickIcon: url(../assets/icons/greenRoundTick.icon.svg);
+//   --pdfIcon: url(../assets/icons/pdf.icon.svg);
+//   --closeCircleIcon: url(../assets/icons/closeCircle.icon.svg);
+//   --carIcon: url(../assets/icons/car.icon.svg);
+//   --bikeIcon: url(../assets/icons/bike.icon.svg);
+//   --homeIcon: url(../assets/icons/home.icon.svg);
+//   --landIcon: url(../assets/icons/land.icon.svg);
+//   --boatIcon: url(../assets/icons/boat.icon.svg);
+//   --goldIcon: url(../assets/icons/gold.icon.svg);
+//   --educationIcon: url(../assets/icons/education.icon.svg);
+//   --vaultIcon: url(../assets/icons/vault.icon.svg);
+//   --leftPrimaryArrowIcon: url(../assets/icons/leftPrimaryArrow.icon.svg);
+//   --rightPrimaryArrowIcon: url(../assets/icons/rightPrimaryArrow.icon.svg);
+//   --dangerWarningIcon: url(../assets/icons/dangerWarning.icon.svg);
+//   --usersIcon: url(../assets/icons/users.icon.svg);
+//   --infoIconBlue: url(../assets/icons/infoIconBlue.icon.svg);
+//   --backArrowIcon: url(../assets/icons/backArrow.icon.svg);
+//   --arrowDownIcon: url(../assets/icons/arrowDown.icon.svg);
+//   --blackArrowDownIcon: url(../assets/icons/blackArrowDown.icon.svg);
+//   --blackArrowUpIcon: url(../assets/icons/blackArrowUp.icon.svg);
+//   --fundsWalletIcon: url(../assets/icons/fundsWallet.icon.svg);
+//   --shieldCoverIcon: url(../assets/icons/shieldCover.icon.svg);
+//   --externalLinkIcon: url(../assets/icons/externalLink.icon.svg);
+//   --positivePriceIndicatorIcon: url(../assets/icons/positivePriceIndicator.icon.svg);
+//   --greenAddButtonIcon: url(../assets/icons/greenSqrAddButton.icon.svg);
+//   --stockInfoIcon: url(../assets/icons/stockInfo.icon.svg);
+//   --zeroPayIcon: url(../assets/images/Illustrations/zeroPay.svg);
+//   --primaryTraingleIcon: url(../assets/icons/primaryTraingle.icon.svg);
+//   --proceedingIcon: url(../assets/icons/proceeding.icon.svg);
+//   --primaryProceedingIcon: url(../assets/icons/primaryProceeding.icon.svg);
+//   --blackProceedingIcon: url(../assets/icons/blackProceeding.icon.svg);
+
+//   --noDataScreenIllustration: url(../assets/images/Illustrations/noDataScreen.svg);
+//   --emptyDataScreenIllustration: url(../assets/images/Illustrations/order.confirmed.svg);
+//   --errorScreenIllustration: url(../assets/images/Illustrations/errorScreen.svg);
+// }

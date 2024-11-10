@@ -1,0 +1,101 @@
+.tagDefault {
+    @apply px-[0.375rem] py-[0.26rem] bg-[#b6b6b626] w-max h-max rounded-sm text-tertiary_font_color uppercase;
+}
+
+$buySellColors: (
+    BUY: (bg: var(--green), text: var(--secret_gardern)),
+    SELL: (bg: var(--red), text: var(--carnation_red)),
+    SELL_AND_BUY: (bg: var(--orange), text: var(--halloween_orange)),
+    BUY_ONLY: (bg: var(--green), text: var(--secret_gardern)),
+    SELL_ONLY: (bg: var(--red), text: var(--carnation_red)),
+);
+$exchangeColors: (
+    BSE: (bg: var(--tealblue), text: var(--island_aqua)),
+    NSE: (bg: var(--yellow), text: var(--crisps)),
+    NFO: (bg: var(--purple), text: var(--matt_purple)),
+);
+$productColors: (
+    MTF: (bg: var(--purple), text: var(--matt_purple)),
+    BTST: (bg: var(--violet), text: var(--matt_ultraviolet)),
+    CASH: (bg: var(--blue), text: var(--dodger_blue)),
+    INTRADAY: (bg: var(--pacific), text: var(--pacific_blue)),
+    SMARTFOLIO: (bg: var(--tealblue), text: var(--island_aqua)),
+);
+$bankColors: (
+    PRIMARYBANK: (bg: var(--blue), text: var(--dodger_blue)),
+    PRIMARY: (bg: var(--blue), text: var(--dodger_blue)),
+    APPROVED: (bg: var(--green), text: var(--secret_gardern)),
+    ACTIVATED: (bg: var(--green), text: var(--secret_gardern)),
+    REJECTED: (bg: var(--red), text: var(--carnation_red)),
+    PENDING: (bg: var(--yellow), text: var(--crisps)),
+    PAYIN: (bg: var(--green), text: var(--secret_gardern)),
+    PAYOUT: (bg: var(--red), text: var(--carnation_red)),
+    CREDIT: (bg: var(--green), text: var(--secret_gardern)),
+    DEBIT: (bg: var(--red), text: var(--carnation_red)),
+    INSUFFICIENTFUND: (bg: var(--red), text: var(--carnation_red)),
+);
+$sentimentsColors: (
+    POSITIVE: (bg: var(--green), text: var(--secret_gardern)),
+    NEGATIVE: (bg: var(--red), text: var(--carnation_red)),
+    NUETRAL: (bg: var(--green), text: var(--secret_gardern)),
+    ACTIVE: (bg: var(--blue), text: var(--dodger_blue)),
+    CLOSED: (bg: var(--red), text: var(--carnation_red)),
+    RESOLVED: (bg: var(--red), text: var(--carnation_red)),
+    ACCEPTED: (bg: var(--green), text: var(--secret_gardern)),
+);
+$dealsColors: (
+    BLOCK: (bg: var(--blue), text: var(--dodger_blue)),
+    BULK: (bg: var(--purple), text: var(--matt_purple)),
+);
+$watchlistColors: (
+    DIVIDEND: (bg: var(--yellow), text: var(--crisps)),
+    BONUS: (bg: var(--purple), text: var(--matt_purple)),
+    SPLIT: (bg: var(--pacific), text: var(--pacific_blue)),
+    RESULT: (bg: var(--blue), text: var(--dodger_blue)),
+    TECHNICAL: (bg: var(--violet), text: var(--matt_ultraviolet)),
+    FUNDAMENTAL: (bg: var(--blue), text: var(--dodger_blue)),
+    ANNOUNCEMENTS: (bg: var(--orange), text: var(--halloween_orange)),
+);
+$recommendationColors: (
+    BUY: (bg: var(--secret_gardern), text: white),
+    SELL: (bg: var(--carnation_red), text: white),
+    HOLD: (bg: var(--silver_dust), text: white),
+    REDUCE: (bg: var(--warning), text: white),
+    NEUTRAL: (bg: var(--info), text: white),
+    ACCUMULATE: (bg: var(--matt_purple), text: white),
+);
+
+@mixin applyColors($tagMap) {
+    @each $class, $values in $tagMap {
+        .#{$class} {
+            background: map-get($values, bg);
+            color: map-get($values, text);
+        }
+    }
+}
+
+.buySell {
+    @include applyColors($buySellColors);
+}
+.exchange {
+    @include applyColors($exchangeColors);
+}
+.product {
+    @include applyColors($productColors);
+}
+.bank {
+    @include applyColors($bankColors);
+}
+.sentiments {
+    @include applyColors($sentimentsColors);
+}
+
+.recommendation {
+    @include applyColors($recommendationColors);
+}
+.deals {
+    @include applyColors($dealsColors);
+}
+.watchlist {
+    @include applyColors($watchlistColors);
+}

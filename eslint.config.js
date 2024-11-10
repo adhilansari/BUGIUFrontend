@@ -11,6 +11,10 @@ module.exports = tseslint.config(
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsRecommended,
+      ...angular.configs.templateAccessibility,
+      ...angular.configs.templateRecommended,
+
+
     ],
     processor: angular.processInlineTemplates,
     rules: {

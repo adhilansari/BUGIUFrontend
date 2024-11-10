@@ -1,0 +1,166 @@
+:root {
+  /* ---------------Main_Colors------------ */
+  --primary: #3a86ff;
+  --accent: #ffc160;
+  --accent_op: #ffc2603f;
+  --success: #0baa60;
+  --destructive: #f64e4b;
+  --warning: #dea511;
+  --info: #3b7cf3;
+  /* ---------------BackGround_Colors------------ */
+  --primary_bg: #fff;
+  --secondary_bg: #f5f8fa;
+  --tertiary_bg: #dcdfe1;
+  /* ---------------Font_Colors------------ */
+  --primary_font_color: #292c33;
+  --secondary_font_color: #7a828f;
+  --tertiary_font_color: #abb3c1;
+  /* ---------------Supportive_Colors------------ */
+  --matt_purple: #9768e1;
+  --matt_purple_op: #9768e11a;
+  --matt_ultraviolet: #bf3ecf;
+  --dodger_blue: #3b7cf3;
+  --dodger_blue_op: #3b7cf31a;
+  --crisps: #e7a640;
+  --crisps_op: #e7a6401a;
+  --secret_gardern: #0baa60;
+  --secret_gardern_op: #0baa601a;
+  --carnation_red: #f64e4b;
+  --halloween_orange: #f15b2b;
+  --island_aqua: #2db9b9;
+  --island_aqua_op: #2db9b91a;
+  --pacific_blue: #0395be;
+  --silver_dust: #bec3ca;
+  --avatar_bg: #ffe6bf;
+  --avatar_text: #b38743;
+  --lemonchiffon: #fffacd;
+  /* ---------------HeatMap_Colors------------ */
+  --green_1: #00674b;
+  --green_2: #367c2b;
+  --green_3: #88a762;
+  --red_1: #a42525;
+  --red_2: #dc2626;
+  --red_3: #f85f5f;
+  /* ---------------Hover_Colors------------ */
+  --button_hover: #055f56;
+  --button_buy_hover: #08925f;
+  --button_sell_hover: #d33641;
+  /* ---------------Drop_Shadow_Colors------------ */
+  --gfl_drop_shadow: 0px 4px 16px 0px rgba(255, 0, 0, 0.06);
+  /* --gfl_drop_shadow: rgba(149, 157, 165, 0.2) 2px 6px 16px;
+  /* ---------------background_mask_Colors------------ */
+  --mask_bg: rgba(41, 44, 51, 0.2);
+  /* ---------------Tags_Colors------------ */
+  --green: #19af5526;
+  --red: #f64e4b26;
+  --lightRed: #ffeae9;
+  --orange: #f15b2b26;
+  --brown: #964b00;
+  --purple: #9768e126;
+  --violet: #bf3ecf26;
+  --blue: #0d61fc26;
+  --pacific: #14abd126;
+  --yellow: #e7a64026;
+  --grey: #bec3ca4d;
+  --tealblue: #2db9b926;
+  --tagcount: #07877b26;
+  /* ---------------Opacity_Colors------------ */
+  --warning_opacity_bg: #e7c1601a;
+  --warning_opacity_border: #e7c16033;
+  --info_opacity_bg:#3b7cf31a;
+  --info_opacity_border:#3b7cf333;
+  --blue_footer: #f2f8ff;
+  --positive_bg: rgba(246, 78, 75, 0.05);
+  --negative_bg: rgba(11, 170, 96, 0.05)
+  /* ---------------Skeleton_Effect------------ */
+  --skeleton_bg: #f6f7f8;
+  --skeleton_gradient: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  animation: shimmer 2s infinite linear;
+}
+.theme_dark {
+  /* ---------------Main_Colors------------ */
+  --primary: #0a2463;
+  --accent: #ffcd80;
+  --success: #3ccc7b;
+  --destructive: #f98477;
+  --warning: #f0d587;
+  --info: #6ba1f7;
+  /* ---------------BackGround_Colors------------ */
+  --primary_bg: #0e0f12;
+  --secondary_bg: #1d1e24;
+  --tertiary_bg: #262b33;
+  --stroke_bg: #393d46;
+  /* ---------------Font_Colors------------ */
+  --primary_font_color: #f1f1f1;
+  --secondary_font_color: #b3b6bd;
+  --tertiary_font_color: #8b9099;
+  /* ---------------Supportive_Colors------------ */
+  --matt_purple: #b68dec;
+  --matt_purple_op: #9768e11a;
+  --matt_ultraviolet: #de6be2;
+  --dodger_blue: #6ba1f7;
+  --dodger_blue_op: #3b7cf31a;
+  --crisps: #f0c26e;
+  --crisps_op: #e7a6401a;
+  --secret_gardern: #3ccc7b;
+  --secret_gardern_op: #0baa601a;
+  --carnation_red: #f98477;
+  --halloween_orange: #f15b2b;
+  --island_aqua: #5cd5ca;
+  --pacific_blue: #38c0d8;
+  --silver_dust: #d5d9df;
+  /* ---------------HeatMap_Colors------------ */
+  --green_1: #28a376;
+  --green_2: #6cb059;
+  --green_3: #b0ca8b;
+  --red_1: #c85e54;
+  --red_2: #ea6558;
+  --red_3: #fa9086;
+  /* ---------------Hover_Colors------------ */
+  --button_hover: #07877b;
+  --button_buy_hover: #0baa60;
+  --button_sell_hover: #f64e4b;
+  /* ---------------Tags_Colors------------ */
+  --green: #19af5526;
+  --red: #f64e4b26;
+  --orange: #f9847726;
+  --purple: #9768e126;
+  --violet: #bf3ecf26;
+  --blue: #0d61fc26;
+  --pacific: #14abd126;
+  --yellow: #e7a64026;
+  --grey: #bec3ca4d;
+  --tealblue: #2db9b926;
+  /* ---------------Opacity_Colors------------ */
+  --warning_opacity_bg: #e7c1601a;
+  --warning_opacity_border: #e7c16033;
+  --blue_footer: #f2f8ff;
+  /* ---------------Drop_Shadow_Colors------------ */
+  --gfl_drop_shadow: 0px 4px 16px 0px rgba(41, 44, 51, 0.06);
+  /* ---------------background_mask_Colors------------ */
+  --mask_bg: rgba(41, 44, 51, 0.2);
+  /* ---------------Font_Colors------------ */
+  --buy: #3ccc7b26;
+  --sell: #f9847726;
+  --mtf: #f9847726;
+  --btst: #de6be226;
+  --cash: #6ba1f726;
+  --intraday: #38c0d826;
+  --smartfolio: #5cd5ca26;
+  /* ---------------Skeleton_Effect------------ */
+  --skeleton_bg: #3a3a3a;
+  --skeleton_gradient: linear-gradient(
+    to right,
+    #3a3a3a 0%,
+    #3f3f3f 20%,
+    #4a4a4a 40%,
+    #3f3f3f 100%
+  );
+  animation: shimmer 2s infinite linear;
+}

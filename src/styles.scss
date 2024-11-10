@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './styles/fonts/fonts.css';
+// @import './styles/_icons.scss';
 
-@import '../node_modules/primeng/resources/themes/aura-dark-cyan/theme.css';
-@import '../node_modules/primeng/resources/primeng.css';
+/* Optional: Set Roboto as the default font for all elements */
+@layer base {
+  html {
+    font-family: Roboto, system-ui, sans-serif;
+  }
+}
