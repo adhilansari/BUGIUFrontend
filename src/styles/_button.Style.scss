@@ -1,45 +1,25 @@
 button {
-    cursor: pointer;
-    outline: none;
-    box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.nav_button {
+  @apply p-2 transition-colors duration-300 rounded lg:px-4 md:mx-2 hover:underline decoration-clone underline-offset-4 text-secondary_text hover:text-primary_text border border-tertiary md:border-none disabled:opacity-[0.4];
 }
 
 .button_primary {
-    @apply flex px-3 py-[0.375rem] justify-center items-center rounded bg-primary text-primary_bg hover:bg-button_hover disabled:opacity-[0.4] disabled:hover:bg-primary
+  @apply flex px-3 py-[0.375rem] justify-center items-center rounded bg-tertiary text-secondary hover:bg-surface-e disabled:opacity-[0.4] disabled:hover:bg-primary;
 }
-
-// .button_primary {
-//     @apply flex px-4 py-[0.875rem] justify-center items-center rounded bg-primary text-primary_bg hover:bg-button_hover disabled:opacity-[0.4] disabled:hover:bg-primary
-// }
-
-// .button_primary {
-//     @apply flex px-3 py-[0.375rem] justify-center items-center rounded bg-primary text-primary_bg hover:bg-button_hover disabled:opacity-[0.4] disabled:hover:bg-primary
-// }
 
 .button_secondary {
-    @apply flex justify-center items-center rounded border-[1px] border-primary text-primary hover:border-primary disabled:opacity-[0.4]
+  @apply flex px-3 py-[0.375rem] justify-center items-center rounded bg-secondary text-secondary_text hover:bg-primary hover:text-primary_text disabled:opacity-[0.4] disabled:hover:bg-primary;
 }
 
-// .button_secondary {
-//     @apply flex justify-center px-4 py-[0.875rem] rounded border-[1px] border-primary text-primary hover:border-primary disabled:opacity-[0.4]
-// }
-
-// .button_secondary {
-//     @apply flex px-3 py-[0.375rem] justify-center rounded border-[1px] border-primary text-primary hover:border-primary disabled:opacity-[0.4]
-// }
-
 .button_ghost {
-    @apply flex justify-center text-primary disabled:opacity-[0.4]
+  @apply flex justify-center text-primary disabled:opacity-[0.4];
 }
 
 .primaryGhostAddButtonIcon {
-    background-image: var(--primaryGhostAddButtonIcon);
-}
-
-.button_buy {
-    @apply rounded bg-secret_gardern text-primary_bg hover:bg-button_buy_hover disabled:opacity-[0.4]
-}
-
-.button_sell {
-    @apply rounded bg-carnation_red text-primary_bg hover:bg-button_sell_hover disabled:opacity-[0.4]
+  background-image: var(--primaryGhostAddButtonIcon);
 }

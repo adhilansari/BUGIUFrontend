@@ -6,14 +6,12 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule,ButtonModule],
+  imports: [CommonModule, ButtonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent implements OnInit {
-
-
-  private themeService = inject(ThemeService)
+  private themeService = inject(ThemeService);
 
   private currentTheme: 'theme_dark' | 'theme_light' = 'theme_light';
   protected isNavbarCollapsed = false;
@@ -21,12 +19,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     // this.switchThemes();
     console.log('hi');
-
   }
 
   protected switchThemes() {
-    this.currentTheme = this.currentTheme === 'theme_light' ? 'theme_dark' : 'theme_light';
-    this.themeService.switchThemes(this.currentTheme)
+    this.currentTheme =
+      this.currentTheme === 'theme_light' ? 'theme_dark' : 'theme_light';
+    this.themeService.switchThemes(this.currentTheme);
   }
   protected toggleNavbar() {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;

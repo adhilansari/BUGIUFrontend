@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "dist/bugiufrontend/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

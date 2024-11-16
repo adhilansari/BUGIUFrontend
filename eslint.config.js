@@ -1,11 +1,11 @@
 // @ts-check
-const eslint = require("@eslint/js");
-const tseslint = require("typescript-eslint");
-const angular = require("angular-eslint");
+const eslint = require('@eslint/js');
+const tseslint = require('typescript-eslint');
+const angular = require('angular-eslint');
 
 module.exports = tseslint.config(
   {
-    files: ["**/*.ts"],
+    files: ['**/*.ts'],
     extends: [
       eslint.configs.recommended,
       ...tseslint.configs.recommended,
@@ -13,42 +13,39 @@ module.exports = tseslint.config(
       ...angular.configs.tsRecommended,
       ...angular.configs.templateAccessibility,
       ...angular.configs.templateRecommended,
-
-
     ],
     processor: angular.processInlineTemplates,
     rules: {
-      "@angular-eslint/directive-selector": [
-        "error",
+      '@angular-eslint/directive-selector': [
+        'error',
         {
-          type: "attribute",
-          prefix: "app",
-          style: "camelCase",
+          type: 'attribute',
+          prefix: 'app',
+          style: 'camelCase',
         },
       ],
-      "@angular-eslint/component-selector": [
-        "error",
+      '@angular-eslint/component-selector': [
+        'error',
         {
-          type: "element",
-          prefix: "app",
-          style: "kebab-case",
+          type: 'element',
+          prefix: 'app',
+          style: 'kebab-case',
         },
       ],
-      "@angular-eslint/prefer-standalone": ["error"], //standalone architecture
+      '@angular-eslint/prefer-standalone': ['error'], //standalone architecture
       // "@angular-eslint/prefer-on-push-component-change-detection": ["error"], // zoneless change detection
     },
   },
   {
-    files: ["**/*.html"],
+    files: ['**/*.html'],
     extends: [
       ...angular.configs.templateRecommended,
       ...angular.configs.templateAccessibility,
     ],
     rules: {
-      "@angular-eslint/template/prefer-self-closing-tags": ["error"], //self-closing components tags
-      "@angular-eslint/template/prefer-control-flow": ["error"], //built-in control flow syntax
-      "@angular-eslint/template/prefer-ngsrc": ["error"], //optimized images
-
+      '@angular-eslint/template/prefer-self-closing-tags': ['error'], //self-closing components tags
+      '@angular-eslint/template/prefer-control-flow': ['error'], //built-in control flow syntax
+      '@angular-eslint/template/prefer-ngsrc': ['error'], //optimized images
     },
   }
 );

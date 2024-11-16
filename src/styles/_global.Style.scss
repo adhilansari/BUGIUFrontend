@@ -1,6 +1,8 @@
 body {
   font-family: 'Open Sans';
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings:
+    'clig' off,
+    'liga' off;
 }
 
 button:disabled {
@@ -159,7 +161,8 @@ button:disabled {
   border-right-color: transparent;
   border-bottom-color: transparent;
   transition: all;
-  animation: initial-rotate ease-in-out 0.8s,
+  animation:
+    initial-rotate ease-in-out 0.8s,
     normal-rotate 1.1s ease-in-out infinite 0.7s;
 
   span {
@@ -251,42 +254,63 @@ button:disabled {
 /* -----------------------Table Api Loader Ends------------------------- */
 
 .tableApiLoader {
-	border-radius: 50%;
-	background: linear-gradient(180deg, #dcdfe1 calc(var(--i, .5)*100%), #07877b 0);
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    #dcdfe1 calc(var(--i, 0.5) * 100%),
+    #07877b 0
+  );
 }
 
 .tableApiLoader::before {
-	border-radius: 50%;
-	background: linear-gradient(180deg, #dcdfe1 calc(var(--i, .5)*100%), #07877b 0);
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    #dcdfe1 calc(var(--i, 0.5) * 100%),
+    #07877b 0
+  );
 }
 
 .tableApiLoader::after {
-	border-radius: 50%;
-	background: linear-gradient(180deg, #dcdfe1 calc(var(--i, .5)*100%), #07877b 0);
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    #dcdfe1 calc(var(--i, 0.5) * 100%),
+    #07877b 0
+  );
 }
 
 .tableApiLoader {
-	display: grid;
-	animation: flip 2*1s steps(1) infinite;
+  display: grid;
+  animation: flip 2 * 1s steps(1) infinite;
 
-	&::before, &::after {
-		--i: 0;
-		grid-area: 1/ 1;
-		backface-visibility: hidden;
-		transform: rotatex(calc((var(--i) + 1)*.5turn));
-		animation: rotx 1s ease-in-out infinite alternate;
-		content: ''
-	}
+  &::before,
+  &::after {
+    --i: 0;
+    grid-area: 1/ 1;
+    backface-visibility: hidden;
+    transform: rotatex(calc((var(--i) + 1) * 0.5turn));
+    animation: rotx 1s ease-in-out infinite alternate;
+    content: '';
+  }
 
-	&::after { --i: 1 }
+  &::after {
+    --i: 1;
+  }
 }
 
-@keyframes flip { 50% { transform: scale(-1) } }
-@keyframes rotx { 0% { transform: rotatex(calc(var(--i)*.5turn)) } }
-
+@keyframes flip {
+  50% {
+    transform: scale(-1);
+  }
+}
+@keyframes rotx {
+  0% {
+    transform: rotatex(calc(var(--i) * 0.5turn));
+  }
+}
 
 /* -----------------------Table Api Loader Ends------------------------- */
-
 
 /* -----------------------Radio Button------------------------- */
 .radioButton {
@@ -318,12 +342,12 @@ button:disabled {
   bottom: 0;
 }
 
-.radioButton input[type="radio"] {
+.radioButton input[type='radio'] {
   opacity: 0.011;
   z-index: 100;
 }
 
-.radioButton input[type="radio"]:checked + label {
+.radioButton input[type='radio']:checked + label {
   border: 0;
   font-weight: 600;
   background-color: var(--primary);
@@ -339,10 +363,9 @@ button:disabled {
   @apply flex-1 h-full p-3 text-sm outline-none bg-secondary_bg text-primary_font_color;
 }
 
-input[type="search"]::-webkit-search-cancel-button:hover {
-  cursor:pointer;
+input[type='search']::-webkit-search-cancel-button:hover {
+  cursor: pointer;
 }
-
 
 /* -----------------------Module Spinner------------------------- */
 .spinner {
@@ -350,7 +373,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 }
 
 .spinner:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -445,4 +468,3 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     font-size: 13px;
   }
 }
-

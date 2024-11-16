@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './shared/components/home/home.component';
+import { HomeComponent } from './modules/home/home.component';
 import { LayoutComponent } from './core/layout/layout.component';
 
 export const routes: Routes = [
@@ -9,13 +9,18 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
+        redirectTo: 'home',
+        pathMatch: 'full',
       },
       {
         path: 'home',
-        component: HomeComponent
+        component: HomeComponent,
       },
-    ]
+      {
+        path: '**',
+        redirectTo: 'home',
+        pathMatch: 'full',
+      }
+    ],
   },
 ];
